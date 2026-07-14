@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Academic Planner | Student Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+
+            Student<span>Portfolio</span>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about.html">About Me</a></li>
+
+                <li><a href="projects.html">Projects</a></li>
+
+                <li><a class="active" href="planner.html">Academic Planner</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= PAGE TITLE ================= -->
+
+    <section>
+
+        <h2>Academic Planner</h2>
+
+        <p style="text-align:center; max-width:900px; margin:auto;">
+
+            Manage your academic activities by adding assignments,
+            coursework, examinations, presentations and study schedules.
+
+        </p>
+
+    </section>
+
+    <!-- ================= STATISTICS ================= -->
+
+    <section class="planner-stats">
+
+        <div class="stat-card">
+
+            <i class="fa-solid fa-list-check"></i>
+
+            <h3>Total Tasks</h3>
+
+            <h1 id="totalTasks">0</h1>
+
+        </div>
+
+        <div class="stat-card">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            <h3>Completed</h3>
+
+            <h1 id="completedTasks">0</h1>
+
+        </div>
+
+        <div class="stat-card">
+
+            <i class="fa-solid fa-clock"></i>
+
+            <h3>Pending</h3>
+
+            <h1 id="pendingTasks">0</h1>
+
+        </div>
+
+    </section>
+
+    <!-- ================= TASK FORM ================= -->
+
+    <section class="planner-container">
+
+        <div class="planner-form">
+
+            <h2>Add New Task</h2>
+
+            <form id="taskForm">
+
+                <label>Task Title</label>
+
+                <input
+                    type="text"
+                    id="taskTitle"
+                    placeholder="Enter Task Title"
+                    required>
+
+                <label>Course Code</label>
+
+                <input
+                    type="text"
+                    id="course"
+                    placeholder="Example: COS106"
+                    required>
+
+                <label>Priority</label>
+
+                <select id="priority">
+
+                    <option value="High">High</option>
+
+                    <option value="Medium">Medium</option>
+
+                    <option value="Low">Low</option>
+
+                </select>
+
+                <label>Deadline</label>
+
+                <input
+                    type="date"
+                    id="deadline"
+                    required>
+
+                <button
+                    type="submit"
+                    class="btn">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Add Task
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- ================= TASK LIST ================= -->
+
+    <section>
+
+        <h2>My Academic Tasks</h2>
+
+        <div id="taskList" class="task-list">
+
+            <!-- JavaScript will insert tasks here -->
+
+        </div>
+
+    </section>
+
+    <!-- ================= SAMPLE TASKS ================= -->
+
+    <section class="quick-info">
+
+        <h2>Example Academic Activities</h2>
+
+        <div class="info-container">
+
+            <div class="card">
+
+                <i class="fa-solid fa-book"></i>
+
+                <h3>Assignment</h3>
+
+                <p>
+
+                    
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-pen"></i>
+
+                <h3>Quiz</h3>
+
+                <p>
+
+                    Prepare for JavaScript Quiz.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+                <h3>Presentation</h3>
+
+                <p>
+
+                    Present Web Technologies Project.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+                <h3>Exam</h3>
+
+                <p>
+
+                    Prepare for Semester Examination.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PLANNER TIPS ================= -->
+
+    <section>
+
+        <h2>Study Tips</h2>
+
+        <div class="info-container">
+
+            <div class="card">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <h3>Plan Ahead</h3>
+
+                <p>
+
+                    Organize your academic tasks before deadlines.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-list"></i>
+
+                <h3>Prioritize</h3>
+
+                <p>
+
+                    Complete high priority assignments first.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-check"></i>
+
+                <h3>Stay Consistent</h3>
+
+                <p>
+
+                    Review your planner every day.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Alfred Joshua|
+            
+
+        </p>
+
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/script.js"></script>
+
+    <script src="js/planner.js"></script>
+
+</body>
+
+</html>
